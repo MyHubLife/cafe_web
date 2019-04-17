@@ -1,0 +1,2 @@
+Создание таблицы получения данных с формы обратной связи
+CREATE TABLE `bd_aladdin`.`feetback_tbl` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(80) NOT NULL , `email` VARCHAR(60) NOT NULL , `subject` VARCHAR(256) NULL , `message` TEXT NULL , `time` DATETIME NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

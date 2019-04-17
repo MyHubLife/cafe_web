@@ -1,0 +1,254 @@
+@charset "utf-8";
+/*стили страницы index*/
+*{
+	margin: 0;
+	padding: 0;
+	outline: none; /*подсветка выделенного обьета синей рамкой*/
+}
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 26px;
+}
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	float: left;
+	width: 100%;
+	height: auto;
+	color: #ff0; /*цвет текста*/
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	background: #919 url(../img/body_background_big.png) fixed center center;
+} 
+a {
+	color: #ff0;
+	text-decoration: none;
+}
+a:hover{
+	color: #fff;
+}
+a, a:hover {
+	transition: all.6s ease;
+}
+.clear{
+	clear: both;
+}
+/*стили для шапки*/
+header {
+	width: 98%;
+	float: left;
+	padding: 1%;
+	position: relative;
+	background-color: #917;
+	border-bottom: 1px solid #ff0;
+	margin-bottom: 8%;
+	text-align: center;
+}
+header #logo{
+	width: 25%;
+	float: left;
+	font-family: 'Roboto', sans-serif;
+    border: 1px solid blue;
+}
+@media (max-width: 799px){
+header #header_menu{
+	width: 90%;
+	float: left;
+	padding: 1px;
+    border: 1px solid blue;
+	}}
+@media (min-width: 800px){
+	header #header_menu{
+	width: 50%;
+	float: left;
+	padding: 2px;
+    border: 1px solid blue;
+	}}
+header #header_menu div{
+/*
+	padding: 2px;
+	background-color: #919;
+	border-radius: 8px;
+*/
+	display: inline-block;
+}
+header #reg_auth{
+	width: 20%;
+	float: left;
+    border: 1px solid blue;
+}
+/*стили для article*/
+article #wrapper{
+	width: 98%;
+	padding: 1%;
+	float: left;
+	position: relative;
+	color: #ff0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	text-align: center;
+}
+/*
+article #wrapper span.Name{
+	text-align: center;
+	font-family: 'Aladin', cursive;
+	font-size: 4em;
+}
+*/
+/*
+article #wrapper #Fon{
+	background-color: #635f5f87;
+}
+*/
+article #wrapper #Fon{
+	background		: rgb(0, 0, 0); /* на случай, если следующая строка не сработает */
+	background		: rgba(0, 0, 0, 0.7);
+	padding			: 10px;
+}
+article button{
+	color: #ff0;
+	font-size: 18px;
+	border: 2px solid #ff0;
+	border-radius: 4px;
+	background-color: #915;
+	padding: 16px;
+	margin: 20px;
+}
+article button:hover{
+	background-color: #919;
+	transition: all.6s ease;
+	cursor: pointer;
+}
+span.road_map {
+    margin: 0 0 0 2%;
+}
+#feetback {
+    margin: 2% 0 0 0;
+}
+/*стили для footer*/
+footer{
+	width: 98%;
+	padding: 1%;
+	float: left;
+	vertical-align: top;
+	position: relative;
+	left: 0;
+  	bottom: 0;
+	height: inherit;
+	border-top: 1px solid #ff0;
+	background-color: #917;
+	margin-top: 10px;
+}
+footer div{
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}  
+footer #rights{
+	width: 20%;
+	border: 1px solid blue;
+}
+footer #contacts{
+	width: 22%;
+	border: 1px solid blue;
+}
+footer #categories_menu{
+	width: 36%;
+	border: 1px solid blue;
+}
+footer #social{
+	width: 20%;
+	border: 1px solid blue;
+}
+footer #social img{
+	width: auto;
+	height:  32px;
+	float: inherit;
+}
+/*страница обратной связи*/
+/*input #name*/
+article #wrapper #Fon #feetback .form input{
+	width: 50%;
+	height: 20px;
+    position: center;
+    float: inherit;
+    font-size: 18px;
+    padding: 4px;
+    margin: 6px;
+    color: #917;
+    border: 2px solid #ff0;
+    border-radius: 4px;
+}
+article #wrapper #Fon #feetback .form textarea{
+	width: 50%;
+	height: 180px;
+    position: center;
+    float: inherit;
+    font-size: 18px;
+    padding: 4px;
+    margin: 6px;
+    color: #917;
+    border: 2px solid #ff0;
+    border-radius: 4px;
+}
+article #wrapper #Fon #feetback .form input:focus{
+	border: 2px solid #919;
+}
+article #wrapper #Fon #feetback .form textarea:focus{
+	border: 2px solid #919;
+}
+/*страница благодарности за обратную связь*/
+.ty_fb{
+	text-align: left;
+}
+/*страница категорий меню*/
+#categories{
+    width: 49%;
+    height: auto;
+    float: left;
+    /*line-height: 100px;*/
+    border: 2px solid blue;
+    background		: rgb(0, 0, 0); /* на случай, если следующая строка не сработает */
+    background		: rgba(0, 0, 0, 0.7);
+    margin          : 2px;
+    text-align      : center;
+}
+#categories img{
+    border: 1px solid blue;
+    height: auto;
+    width: auto;
+    position: center;
+    margin: 4px;
+    padding: 4px;
+}
+#categories ul{
+    border: 1px solid blue;
+    margin: 4px;
+}
+/*страница продуктов*/
+#products{
+    width: 49%;
+    height: auto;
+    float: left;
+    /*line-height: 100px;*/
+    border: 2px solid blue;
+    background		: rgb(0, 0, 0); /* на случай, если следующая строка не сработает */
+    background		: rgba(0, 0, 0, 0.7);
+    margin          : 2px;
+    text-align      : center;
+}
+#products img{
+    border: 1px solid blue;
+    height: auto;
+    width: auto;
+    position: center;
+    margin: 4px;
+    padding: 4px;
+}
+#products ul{
+    border: 1px solid blue;
+    margin: 4px;
+}
