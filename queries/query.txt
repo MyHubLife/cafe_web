@@ -1,2 +1,8 @@
-Создание таблицы получения данных с формы обратной связи
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+
+CREATE TABLE `bd_aladdin`.`category_tbl` ( `category_id` INT NOT NULL AUTO_INCREMENT , `category_name` VARCHAR(256) NULL , `category_img` BLOB NULL , PRIMARY KEY (`category_id`)) ENGINE = InnoDB;
+
+CREATE TABLE `bd_aladdin`.`product_tbl` ( `product_id` INT NOT NULL AUTO_INCREMENT , PRIMARY KEY (`product_id`)) ENGINE = InnoDB;
+CREATE TABLE `bd_aladdin`.`product_tbl` ( `product_id` INT NOT NULL AUTO_INCREMENT , `product_name` TEXT NOT NULL , `product_price` TEXT NOT NULL , `product_image` TEXT NOT NULL , `product_description` INT NOT NULL , `product_cat_id` INT NULL , PRIMARY KEY (`product_id`)) ENGINE = InnoDB;
+
 CREATE TABLE `bd_aladdin`.`feetback_tbl` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(80) NOT NULL , `email` VARCHAR(60) NOT NULL , `subject` VARCHAR(256) NULL , `message` TEXT NULL , `time` DATETIME NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

@@ -52,10 +52,11 @@ if (isset ($_POST['done'])){
 function show_categories(){
     //echo "Function is work!";
     global $con;
-    $sql = "SELECT * FROM `category_tbl`";
+    $sql = "SELECT * FROM category_tbl";
     $result = mysqli_query($con, $sql);
     if (mysqli_num_rows($result)>0){
         $row = mysqli_fetch_array($result);
+        //var_dump($row);
         do{
             echo '
             <div id="categories">
@@ -63,7 +64,9 @@ function show_categories(){
                     <a href="category_wiev.php?category_id='.$row["category_id"].'"><ul id="'.$row["category_id"].'">'.$row["category_name"].'</ul></a>
             </div>
             ';
-        }while ($row = mysqli_fetch_array($result));
+        }while ($row = mysqli_fetch_array($result));        
+    }else {
+        echo 'Не выполнила прочитку БД';
     }
 };
 
